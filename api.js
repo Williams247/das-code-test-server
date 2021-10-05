@@ -25,7 +25,7 @@ const handleGenerateRandomNum = () => {
       // Prime numbers appended to an array
       arr.push(i);
     }
-    // When i is the last number which is 97 (Primes)
+    // When i is the last number which is 97 (Prime range)
     if (i === 97) {
       bigPrime = arr[Math.floor(Math.random() * arr.length)];
       console.log(bigPrime);
