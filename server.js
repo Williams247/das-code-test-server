@@ -20,7 +20,7 @@ app.use((request, response, next) => {
 app.use(require('./api'));
 
 app.use((request, response) => {
-    response.status(404).json({ message: 'EndPoint not found' });
+    response.status(404).json({ message: 'EndPoint not found, Call the "/getsecret" endpoint and start.' });
 });
 
 const port = process.env.PORT || 8000;
